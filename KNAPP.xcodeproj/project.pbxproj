@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E16E5DBD1F05267100851E01 /* KNAPP.zip in Resources */ = {isa = PBXBuildFile; fileRef = E16E5DBC1F05267100851E01 /* KNAPP.zip */; };
 		E1CA7CC81F05198C00736B6E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E1CA7CC71F05198C00736B6E /* main.m */; };
 		E1CA7CCB1F05198C00736B6E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E1CA7CCA1F05198C00736B6E /* AppDelegate.m */; };
 		E1CA7CCE1F05198C00736B6E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E1CA7CCD1F05198C00736B6E /* ViewController.m */; };
@@ -50,6 +51,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E16E5DBC1F05267100851E01 /* KNAPP.zip */ = {isa = PBXFileReference; lastKnownFileType = archive.zip; path = KNAPP.zip; sourceTree = "<group>"; };
 		E1CA7CC31F05198C00736B6E /* KNAPP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KNAPP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1CA7CC71F05198C00736B6E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		E1CA7CC91F05198C00736B6E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -114,6 +116,7 @@
 				E1CA7CD41F05198C00736B6E /* LaunchScreen.storyboard */,
 				E1CA7CD71F05198C00736B6E /* Info.plist */,
 				E1CA7CC71F05198C00736B6E /* main.m */,
+				E16E5DBC1F05267100851E01 /* KNAPP.zip */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -229,6 +232,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E16E5DBD1F05267100851E01 /* KNAPP.zip in Resources */,
 				E1CA7CD61F05198C00736B6E /* LaunchScreen.storyboard in Resources */,
 				E1CA7CD31F05198C00736B6E /* Assets.xcassets in Resources */,
 				E1CA7CD11F05198C00736B6E /* Main.storyboard in Resources */,
