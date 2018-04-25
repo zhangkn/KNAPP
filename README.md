@@ -3,9 +3,19 @@
 
 
 
+# [推荐使用git_subtree 进行引用静态库](https://kunnan.github.io/2018/04/25/git_subtree/)
+
+>* git remote -v
+>```
+>devzkndeMacBook-Pro:KNAPP devzkn$ git remote -v
+KNCocoaTouchStaticLibrary	git@github.com:zhangkn/KNCocoaTouchStaticLibrary.git (fetch)
+KNCocoaTouchStaticLibrary	git@github.com:zhangkn/KNCocoaTouchStaticLibrary.git (push)
+origin	git@github.com:zhangkn/KNAPP.git (fetch)
+origin	git@github.com:zhangkn/KNAPP.git (push)
+>```
 
 
-# 步骤
+# 步骤(git clone的方式)
 >* [搭建一个提高开发效率的iOS静态库工程](https://blog.csdn.net/z929118967/article/details/73872024)
 >* 1、快速创建一个静态库，利用KNAPP的模板
 ```
