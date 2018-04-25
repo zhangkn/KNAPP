@@ -31,6 +31,24 @@ devzkndeMacBook-Pro:KNAPP devzkn$ git clone git@github.com:zhangkn/KNCocoaTouchS
 ```
 
 
+# [更新此项目的git基础命令](https://kunnan.github.io/2018/04/25/git_subtree/)
+
+>* 修改子项目KNCocoaTouchStaticLibrary
+>```
+>git subtree push --prefix=KNCocoaTouchStaticLibrary KNCocoaTouchStaticLibrary master 
+>```
+>*  更新子项目
+>```
+>1) devzkndeMacBook-Pro:KNAPP devzkn$ git fetch git@github.com:zhangkn/KNCocoaTouchStaticLibrary.git master
+>2) devzkndeMacBook-Pro:KNAPP devzkn$ git subtree pull --prefix=KNCocoaTouchStaticLibrary KNCocoaTouchStaticLibrary master --squash
+>```
+
+>* 添加子项目
+>```
+>1) devzkndeMacBook-Pro:KNAPP devzkn$ git remote add -f  KNCocoaTouchStaticLibrary git@github.com:zhangkn/KNCocoaTouchStaticLibrary.git
+>2) devzkndeMacBook-Pro:KNAPP devzkn$ git subtree add --prefix=KNCocoaTouchStaticLibrary KNCocoaTouchStaticLibrary master --squash
+>```
+
 # see also
 >* [KNCocoaTouchStaticLibrary](https://github.com/zhangkn/KNCocoaTouchStaticLibrary)
 
