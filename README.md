@@ -13,5 +13,5 @@ cd /Users/devzkn/code/cocoapodDemo/cocoapodStatic/KNAPP/
 ```
 >* 3、拷贝静态库
 ```
-devzkndeMacBook-Pro:cocoapodDemo devzkn$ git clone git@github.com:zhangkn/KNCocoaTouchStaticLibrary.git
+devzkndeMacBook-Pro:KNAPP devzkn$ git clone git@github.com:zhangkn/KNCocoaTouchStaticLibrary.git
 >```
