@@ -35,6 +35,8 @@ devzkndeMacBook-Pro:KNAPP devzkn$ git clone git@github.com:zhangkn/KNCocoaTouchS
 
 >* 修改子项目KNCocoaTouchStaticLibrary
 >```
+>devzkndeMacBook-Pro:KNAPP devzkn$ git add .
+devzkndeMacBook-Pro:KNAPP devzkn$ git commit -a
 >git subtree push --prefix=KNCocoaTouchStaticLibrary KNCocoaTouchStaticLibrary master 
 >```
 >*  更新子项目

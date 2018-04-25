@@ -387,6 +387,7 @@
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = KNAPP/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = com.cmcc.KNAPP;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				USER_HEADER_SEARCH_PATHS = "./KNCocoaTouchStaticLibrary/Business/**";
@@ -401,6 +402,7 @@
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = KNAPP/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = com.cmcc.KNAPP;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				USER_HEADER_SEARCH_PATHS = "./KNCocoaTouchStaticLibrary/Business/**";
