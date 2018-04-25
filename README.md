@@ -58,3 +58,4 @@ devzkndeMacBook-Pro:KNAPP devzkn$ git commit -a
 
 
 
+制作一个库（静态库)的时候，避免避免对系统类加 category，否则使用者需要添加编译参数： -ObjC“
