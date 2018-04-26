@@ -390,7 +390,7 @@
 				OTHER_LDFLAGS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = com.cmcc.KNAPP;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				USER_HEADER_SEARCH_PATHS = "./KNCocoaTouchStaticLibrary/Business/**";
+				USER_HEADER_SEARCH_PATHS = "./KNCocoaTouchStaticLibrary/Business/PublicInterface/** ./KNCocoaTouchStaticLibrary/Business/**";
 			};
 			name = Debug;
 		};
@@ -405,7 +405,7 @@
 				OTHER_LDFLAGS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = com.cmcc.KNAPP;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				USER_HEADER_SEARCH_PATHS = "./KNCocoaTouchStaticLibrary/Business/**";
+				USER_HEADER_SEARCH_PATHS = "./KNCocoaTouchStaticLibrary/Business/PublicInterface/** ./KNCocoaTouchStaticLibrary/Business/**";
 			};
 			name = Release;
 		};
