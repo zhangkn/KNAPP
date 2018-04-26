@@ -78,7 +78,8 @@ Pod::Spec.new do |s|
   #  Supports git, hg, bzr, svn and HTTP. 不能用SSH地址
   # tag ,一般都是从tag 获取内容，因此记得创建tag分支
 
-  s.source       = { :git => "https://github.com/zhangkn/KNCocoaTouchStaticLibrary.git", :tag => "#{s.version}" } ##你的仓库地址，不能用SSH地址
+  s.source       = { :git => "https://github.com/zhangkn/KNCocoaTouchStaticLibrary.git", :tag => "#{s.version}" }  ## 你的仓库地址，不能用SSH地址
+  # 配置项目的目标路径，如果不是本地开发，pod init/update会从这个路去拉去代码
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -88,12 +89,13 @@ Pod::Spec.new do |s|
   #  For header files it will include any header in the folder.
   #  Not including the public_header_files will make all headers public.
   #
+  # Business/PublicInterface 
+  # 源码位置
 
-  s.source_files  = "Classes", "Classes/**/*.{h,m}" # 代码的位置， Classes/*.{h,m} 表示 Classes 文件夹下所有的.h和.m文件
+  s.source_files  = "Business", "Business/**/*.{h,m}" # 代码的位置， Classes/*.{h,m} 表示 Classes 文件夹下所有的.h和.m文件
   s.exclude_files = "Classes/Exclude"
 
-  # s.public_header_files = "Classes/**/*.h"
-
+  s.public_header_files = "Business/PublicInterface/*.h"   # #需要对外开放的头文件
 
   # ――― Resources ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
@@ -102,9 +104,9 @@ Pod::Spec.new do |s|
   #  You can preserve files from being cleaned, please don't preserve
   #  non-essential files like tests, examples and documentation.
   #
-
+  #本项目依赖的是KNStaticBundle.bundle 中的资源文件
   # s.resource  = "icon.png"
-  # s.resources = "Resources/*.png"
+  # s.resources = "Resources/*.png" ##资源，比如图片，音频文件等
 
   # s.preserve_paths = "FilesToSave", "MoreFilesToSave"
 
@@ -116,11 +118,13 @@ Pod::Spec.new do |s|
   #
 
   # s.framework  = "SomeFramework"
-  # s.frameworks = "SomeFramework", "AnotherFramework"
+  # s.frameworks = "SomeFramework", "AnotherFramework" ##表示依赖系统的框架
 
   # s.library   = "iconv"
-  # s.libraries = "iconv", "xml2"
-
+  # s.libraries = "iconv", "xml2" ##表示依赖的系统类库，比如libz.dylib等
+  # s.ios.vendored_frameworks = 'YJKit/YJKit.framework' # 依赖的第三方/自己的framework
+  #s.vendored_libraries = 'Library/Classes/libWeChatSDK.a' #表示依赖第三方/自己的静态库（比如libWeChatSDK.a）
+#依赖的第三方的或者自己的静态库文件必须以lib为前缀进行命名，否则会出现找不到的情况，这一点非常重要
 
   # ――― Project Settings ――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
@@ -131,6 +135,6 @@ Pod::Spec.new do |s|
   # s.requires_arc = true
 
   # s.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
-  # s.dependency "JSONKit", "~> 1.4"
+  # s.dependency "JSONKit", "~> 1.4" # 依赖的项目内容 可以多个
 
 end
